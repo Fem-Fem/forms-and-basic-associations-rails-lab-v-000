@@ -22,6 +22,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(name)
+    binding.pry
     self.notes = Genre.find_or_create_by(name: name)
   end
 
