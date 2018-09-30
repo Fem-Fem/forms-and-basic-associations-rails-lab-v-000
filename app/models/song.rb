@@ -30,7 +30,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
-    binding.pry
+    # binding.pry
     self.notes.collect { |note| note.content }
   end
 
