@@ -24,7 +24,7 @@ class Song < ActiveRecord::Base
   def note_contents=(name)
     # binding.pry
     self.notes = []
-    name.size.each do |note|
+    name.each do |note|
       self.notes << Note.find_or_create_by(content: note)
     end
   end
