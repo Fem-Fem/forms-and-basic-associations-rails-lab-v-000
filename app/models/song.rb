@@ -31,7 +31,7 @@ class Song < ActiveRecord::Base
 
   def note_contents
     binding.pry
-    self.notes ? self.notes.name : nil
+    self.notes
   end
 
 end
